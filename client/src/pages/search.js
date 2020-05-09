@@ -35,7 +35,7 @@ function saveBooks(book){
         title: book.volumeInfo.title,
         author: book.volumeInfo.authors[0],
         synopsis: book.volumeInfo.description,
-        image: book.volumeInfo.imageLinks.thumbnail
+        image: book.volumeInfo.imageLinks.thumbnail,
     }
     API.saveBook(bookInfo)
     .then(res => {
