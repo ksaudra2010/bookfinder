@@ -13,8 +13,7 @@ function App() {
      
         <Route path = "/Books" component = { Books }/> 
         <Route path = "/Search" component = { Search }/> 
-     
-    
+        <Redirect from="*" to="/Search"/>
     </div> 
     </Router>
   );
